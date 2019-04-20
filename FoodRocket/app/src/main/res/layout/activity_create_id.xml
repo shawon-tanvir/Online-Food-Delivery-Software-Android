@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    >
+
+
+    <EditText
+        android:id="@+id/createemailbox"
+
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:layout_height="50dp"
+
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/createpasswordbox"
+        style="@android:style/Widget.Material.EditText"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#393b3b"
+        android:textColor="#edf7f6"
+        android:textColorHint="#edf7f6"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/createemailbox"
+        android:layout_alignStart="@+id/createemailbox" />
+
+    <Button
+        android:id="@+id/createbutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="#9ba6de"
+        android:text="Create ID"
+        android:layout_below="@+id/createpasswordbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="#9ba6de"
+        android:text="Button"
+        android:onClick="onClickbutton"
+        android:layout_below="@+id/createbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/download"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+
+</RelativeLayout>
+
+

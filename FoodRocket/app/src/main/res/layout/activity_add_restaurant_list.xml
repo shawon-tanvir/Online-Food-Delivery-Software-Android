@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ImageView
+        android:id="@+id/ResTaurantImage"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/a"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/adRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Photo"
+        tools:layout_editor_absoluteY="280dp"
+        tools:layout_editor_absoluteX="162dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/ResTaurantImage"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ResInput"
+        android:hint="Restaurant Name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/adRestaurant"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/FoodInput"
+        android:hint="Food Name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ResInput"
+        android:layout_alignStart="@+id/ResInput"
+        android:layout_marginTop="17dp" />
+    <EditText
+        android:id="@+id/PriceInput"
+        android:hint="Price"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/FoodInput"
+        android:layout_alignStart="@+id/FoodInput" />
+    <Button
+        android:id="@+id/adFooditem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        tools:layout_editor_absoluteY="280dp"
+        tools:layout_editor_absoluteX="162dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/PriceInput"
+        android:layout_alignStart="@+id/adRestaurant" />
+
+</RelativeLayout>
+
+
+
